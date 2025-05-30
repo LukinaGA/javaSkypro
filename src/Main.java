@@ -1,3 +1,5 @@
+import static java.lang.Math.abs;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -51,5 +53,10 @@ public class Main {
 
         System.out.println("Масса обоих бойцов: " + (firstBoxerWeight + secondBoxerWeight) + " кг.");
         System.out.println("Разница в весе: " + (secondBoxerWeight - firstBoxerWeight) + " кг.");
+
+        /* не вижу смысла применять в таких рассчетах остаток от деления, потому что в случае, когда
+        * вес будет отличаться более, чем в 2 раза, рассчёты будут некорректными. Сделаем так:*/
+
+        System.out.println(abs(firstBoxerWeight - secondBoxerWeight));
     }
 }
