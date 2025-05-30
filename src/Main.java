@@ -58,5 +58,15 @@ public class Main {
         * вес будет отличаться более, чем в 2 раза, рассчёты будут некорректными. Сделаем так:*/
 
         System.out.println(abs(firstBoxerWeight - secondBoxerWeight));
+
+        var hoursTotal = 640;
+        var hoursPerWorker = 8;
+
+        var workersCount = hoursTotal / hoursPerWorker;
+        System.out.println("Всего работников в компании — " + workersCount + " человек.");
+
+        workersCount = workersCount + 94;
+        hoursTotal = hoursPerWorker * workersCount;
+        System.out.println("Если в компании работает " + workersCount + " человека, то всего " + hoursTotal + " часа работы может быть поделено между сотрудниками.");
     }
 }
